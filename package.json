@@ -2,8 +2,8 @@
   "name": "list-of-ingredients",
   "license": "MIT",
   "engines": {
-    "node": "10.15.3",
-    "yarn": "1.15.2"
+    "node": "16.18.0",
+    "yarn": "1.22.22"
   },
   "scripts": {
     "build": "yarn --cwd client install && yarn --cwd client build",
