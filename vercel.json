@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "Gemfile",
+      "use": "@vercel/ruby",
+      "config": {
+        "buildCommand": "bundle install && rails assets:precompile"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/public/$1"
+    }
+  ]
+}
